@@ -1,6 +1,39 @@
+
 .coursesCard {
   padding: 50px 0;
 }
+
+.cut-off{
+  /* 
+  display: -webkit-box; 
+  overflow: hidden;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: var(--max-lines); */
+  --max-lines:5;
+  --line-height:1.4;
+  display: flex;
+  max-height: calc(var(--max-lines) * 1rem * var(--line-height));
+  line-height: var(--line-height);
+  overflow: hidden;
+  position: relative;
+}
+
+.cut-off:has(+.outline-btn:not(:checked))::before{
+  content: '';
+  position: absolute;
+  height: calc(1rem * var(--line-height));
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+
+/**
+display: -webkit-box; 
+
+-webkit-box-orient: vertical;
+*/
 .coursesCard .items {
   background-color: #fff;
   padding: 30px;
@@ -112,6 +145,97 @@
 .online .box:hover h1 {
   color: #fff;
 }
+
+.outline-btn{
+  appearance: none;
+  box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
+  padding: 17px 30px;
+  background-color: #fff;
+  color: #1eb2a6;
+  font-weight: 600;
+  border: 1px solid #1eb2a6;
+  margin: 30px 10px 0 0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.outline-btn:hover {
+  box-shadow: none;
+}
+
+.outline-btn::before{
+  content: "LEARN MORE";
+}
+
+.outline-btn:checked::before{
+  transition-delay: ease-in;
+  content: "COLLASPE";
+}
+
+.outline-btn:checked::after{
+  max-height: none;
+}
+
+.cut-off:has(+ .outline-btn:checked){
+  max-height: none;
+}
+
+
+.cut-off:has(+ .outline-btn:checked){
+  max-height: none;
+}
+
+.doApper{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:9999;
+  color:black;
+  /* background-color:rgba(131, 127, 127, 0.8); */
+  
+}
+
+.doDisappear{
+  display: none;
+}
+.cover{
+  width:100%;
+max-width:552px;
+background-color: white;
+max-height:90%;
+overflow:initial;
+border-radius:5px;
+position:relative;
+display:flex;
+flex-direction:column;
+top:200px;
+margin:0 auto;
+}
+
+.cover_sub >h1{
+  text-align: center;
+  margin: 30px;
+  /* font-size: large; */
+}
+
+.cover_sub >ul{
+  font-size: 1rem;
+  margin: 0 20px 10px 20px;
+}
+
+.cover_sub{
+  margin: 0 30px;
+  display:flex;
+flex-direction:column;
+}
+
+
 /*-------------online---------*/
 @media screen and (max-width: 768px) {
 }
+
+

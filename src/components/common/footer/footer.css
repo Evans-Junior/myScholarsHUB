@@ -18,6 +18,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.contact__form{
+  width: 500px;
+}
+
+.email_here{
+  min-width: 400px;
+}
+
 .newletter input {
   width: 100%;
   padding: 20px;
@@ -85,6 +94,21 @@ footer .items i {
   margin-right: 5px;
   text-transform: capitalize;
 }
+
+.linkedin{
+  font-size: 12px;
+  /* color: #1eb2a6 ; */
+  margin-right: 5px;
+  text-transform: capitalize;
+}
+
+.social_media{
+  display: grid;
+  grid-template-rows: (3fr,0.25%);
+  row-gap: 15px;
+  /* justify-content: space-between; */
+}
+
 footer h4 {
   font-weight: 400;
   margin-top: 5px;

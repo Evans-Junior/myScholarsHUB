@@ -1,20 +1,32 @@
-import React from "react"
+import React,{useRef } from "react"
 import { blog } from "../../../dummydata"
 import "./footer.css"
+import emailjs from '@emailjs/browser';
+
 
 const Footer = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_2ch24lm', 'template_y41zxpf', form.current, 'oyhKpuE8pEN_nUEBp')
+   e.target.reset()
+  };
   return (
     <>
       <section className='newletter'>
         <div className='container flexSB'>
           <div className='left row'>
             <h1>Newsletter - Stay tune and get the latest update</h1>
-            <span>Far far away, behind the word mountains</span>
+            <span>Education is the passport to the future, for tomorrow belongs to those who prepare for it today." - Malcolm X.</span>
           </div>
+          <form ref={form} onSubmit={sendEmail} className='contact__form'>
           <div className='right row'>
-            <input type='text' placeholder='Enter email address' />
+            <input  type='email' name="email" className="email_here" placeholder='Enter email address' />
             <i className='fa fa-paper-plane'></i>
           </div>
+          </form>
         </div>
       </section>
       <footer>
@@ -22,11 +34,12 @@ const Footer = () => {
           <div className='box logo'>
             <h1>myScholarsHUB</h1>
             <span>Where preparedness meets opportunity.</span>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-
-            <i className='fab fa-facebook-f icon'></i>
+            <p>"An investment in knowledge pays the best interest." - Benjamin Franklin</p>
+            <div className="social_media">
+            <a href=""> <img src="./images/icons/linkedin.png" width={30} className="linkedin"/></a>
             <i className='fab fa-twitter icon'></i>
             <i className='fab fa-instagram icon'></i>
+            </div>
           </div>
           <div className='box link'>
             <h3>Explore</h3>
@@ -74,15 +87,15 @@ const Footer = () => {
             <ul>
               <li>
                 <i className='fa fa-map'></i>
-                203 Fake St. Mountain View, San Francisco, California, USA
+                1 University Avenue, Berekuso; PMB CT 3, Cantonments, Accra, Ghana.
               </li>
               <li>
                 <i className='fa fa-phone-alt'></i>
-                +2 392 3929 210
+                +233 (0)50 508 81 7557
               </li>
               <li>
                 <i className='fa fa-paper-plane'></i>
-                info@yourdomain.com
+                myscholarshub2@gmail.com
               </li>
             </ul>
           </div>
@@ -90,7 +103,7 @@ const Footer = () => {
       </footer>
       <div className='legal'>
         <p>
-          Copyright ©2022 All rights reserved | This template is made with <i className='fa fa-heart'></i> by GorkhCoder
+          Copyright ©2023 All rights reserved | This template is made with <i className='fa fa-heart'></i> @future codes
         </p>
       </div>
     </>

@@ -8,7 +8,7 @@ const Testimonal = () => {
     <>
       <section className='testimonal padding'>
         <div className='container'>
-          <Heading subtitle='TESTIMONIAL' title='Our Successful Students' />
+          <Heading subtitle='TESTIMONIAL' title='Students beneficiary' />
 
           <div className='content grid2'>
             {testimonal.map((val) => (
@@ -20,7 +20,7 @@ const Testimonal = () => {
                   </div>
                   <div className='name'>
                     <h2>{val.name}</h2>
-                    <span>{val.post}</span>
+                    <span><small>At: </small>{val.post}</span>
                   </div>
                 </div>
                 <p>{val.desc}</p>
