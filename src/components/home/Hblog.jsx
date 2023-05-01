@@ -10,7 +10,9 @@ const Hblog = () => {
     <>
       <section className='blog'>
         <div className='container'>
-          <Heading subtitle='OUR BLOG' title='Recent From Blog' />
+          <Heading subtitle='OUR BLOG' title='Stay tuned ...' />
+          {/*<Heading subtitle='OUR BLOG' title='Recent From Blog' />
+
           <div className='grid2'>
             {blog.slice(0, 3).map((val) => (
               <div className='items shadow'>
@@ -33,11 +35,11 @@ const Hblog = () => {
                     </span>
                   </div>
                   <h1>{val.title}</h1>
-                  <p>{val.desc}</p>
+                  <p className="about_students">{val.desc}</p>
                 </div>
               </div>
             ))}
-          </div>
+            </div>*/}
         </div>
       </section>
     </>

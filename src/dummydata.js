@@ -21,25 +21,25 @@ export const homeAbout = [
 export const awrapper = [
   {
     cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
-    data: "3,000",
-    title: "SUCCESS STORIES",
+    data: "8.8 billion",
+    title: "awarded scholarships all over the world",
   },
 
   {
     cover: "https://img.icons8.com/ios/80/ffffff/athlete.png",
-    data: "320",
-    title: "TRUSTED TUTORS",
+    data: "1.7 million",
+    title: "people have scholarships with private scholarships",
   },
-  {
-    cover: "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
-    data: "1,000",
-    title: "SCHEDULES",
-  },
-  {
-    cover: "https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png",
-    data: "587",
-    title: "COURSES",
-  },
+  // {
+  //   cover: "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
+  //   data: "1,000",
+  //   title: "SCHEDULES",
+  // },
+  // {
+  //   cover: "https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png",
+  //   data: "587",
+  //   title: "COURSES",
+  // },
 ]
 export const coursesCard = [
   {
@@ -376,14 +376,14 @@ export const testimonal = [
     name: "Emmanuel Dwamena",
     post: "University of Ghana",
     desc: "Anokye Yaw Mark completed high school at Osei Kyeretwie SH, and is now a full scholarship beneficiary studying computer science. ",
-    cover: "./images/students/st1.jpeg",
+    cover: "./images/students/st5.jpeg",
   },
   {
     id: 2,
     name: "Anokye Yaw Mark",
     post: "Kwame Nkrumah University of Science and Technology",
     desc: "Anokye Yaw Mark completed high school at Osei Kyeretwie SH, and is now a full scholarship beneficiary studying computer science. ",
-    cover: "./images/students/st2.jpeg",
+    cover: "./images/students/st1.jpeg",
   },
   {
     id: 3,

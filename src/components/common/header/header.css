@@ -39,10 +39,7 @@ header ul li a:hover {
   color: #1eb2a6;
 }
 .start {
-  background-color: #1eb2a6;
-  padding: 30px 70px;
-  color: #fff;
-  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+  display: none;
 }
 .toggle {
   display: none;
@@ -50,6 +47,10 @@ header ul li a:hover {
 /*--------header------------*/
 @media screen and (max-width: 768px) {
   .start {
+    background-color: #1eb2a6;
+  padding: 30px 70px;
+  color: #fff;
+  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
     clip-path: none;
   }
   header {
@@ -73,10 +74,36 @@ header ul li a:hover {
     top: -20px;
   }
   .mobile-nav {
-    position: absolute;
+    position: fixed;
     top: 7vh;
     left: 0;
     width: 100%;
     background-color: #1eb2a6;
   }
+
+  .fa-times{
+    color: #fff;
+  }
+}
+
+
+/* For small devices */
+@media screen and (max-width: 400px) {
+  
+  .toggle{
+    position: fixed;
+    top:-15px;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .logo >span{
+    color: rgba(65, 137, 245, 0.801);
+  }
+  #heading >h1{
+    font-size: 01.3rem;
+  }
+
 }

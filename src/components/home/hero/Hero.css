@@ -8,7 +8,7 @@
   width: 100%;
   height: 100vh;
   padding-top: 20%;
-  padding-right: 50px;
+  /* padding-right: 50px; */
   color: #fff;
 }
 .hero #heading h3 {
@@ -42,4 +42,51 @@ background-color: #1eb2a6;
   .hero .row {
     width: 100%;
   }
+
+  
 }
+
+@media screen and (max-width: 400px) {
+.hero{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+  .best_heading{
+  margin-top: 70%;
+  font-size: 0.8rem;
+}
+
+.button{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.grab_mobile{
+  background-color: #1eb2a6;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-radius: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+.primary-btn .button-explore{
+  font-size: 0.9rem;
+  border-radius: 15px;
+  white-space: nowrap;
+
+}
+
+.homeAbout{
+  margin-top: 300px;
+}
+
+
+
+}
+
+

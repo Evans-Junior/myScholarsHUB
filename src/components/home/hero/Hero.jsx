@@ -9,8 +9,10 @@ function Hero (){
       <section className="hero" >
         <div className='container'>
           <div className='row'>
+            <div className="best_heading">
             <Heading subtitle='WELCOME TO myScholarsHUB' title='Best Online Education Expertise' />
-            <p>Grab an opportunity to start your education at your dream school whiles on Scholarship.</p>
+            </div>
+            <p className="grab_mobile">Grab an opportunity to start your education at your dream school whiles on Scholarship.</p>
             <div className='button'>
             <Link className="" to="/apply">  
             <button className='primary-btn'>

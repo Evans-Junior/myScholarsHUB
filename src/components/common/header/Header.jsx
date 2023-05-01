@@ -1,10 +1,30 @@
-import React, { useState } from "react"
+import React, { useState,useEffect } from "react"
 import { Link } from "react-router-dom"
 import Head from "./Head"
 import "./header.css"
 
 const Header = () => {
   const [click, setClick] = useState(false)
+
+  const listenScrollEvent = (event) => {
+    if (window.scrollY < 73) {
+      document.getElementById("style-1").style.color="#fff";
+    } else if (window.scrollY > 70) {
+      document.getElementById("style-1").style.color="#000";
+    } 
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent);
+  
+    return () =>
+      window.removeEventListener('scroll', listenScrollEvent);
+  }, []);
+
+function scrollFunction() {
+  
+}
+
 
   return (
     <div className="header-home">
@@ -33,10 +53,9 @@ const Header = () => {
             </li>
           </ul>
           <div className='start'>
-            <div className='button'>LOGIN</div>
           </div>
-          <button className='toggle' onClick={() => setClick(!click)}>
-            {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
+          <button className='toggle' onClick={() => setClick(!click)} id="style-1">
+            {click ? <i className='fa fa-times'> </i> : <i onScroll={listenScrollEvent} className='fa fa-bars'></i>}
           </button>
         </nav>
       </header>

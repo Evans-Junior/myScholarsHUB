@@ -5,7 +5,8 @@ import "../allcourses/courses.css"
 import { coursesCard } from "../../dummydata"
 import { Link } from "react-router-dom"
 
-const HAbout = () => {
+
+const  HAbout = () => {
 const [see,setSee]=useState(false);
 
 function seeMoreDo(event){
@@ -24,7 +25,7 @@ function seeMoreDo(event){
       <button className=''>More Opportunities</button>
       </Link>
         <div className='container'>
-          <Heading subtitle='' title='Creating meaningful experiences.' />
+          <Heading className="creating_title" subtitle='' title='Creating meaningful experiences.' />
 
           <div className='coursesCard'>
             {/* copy code form  coursesCard */}
@@ -94,40 +95,15 @@ function seeMoreDo(event){
                       </div>
                     </div>
                   </div>
-                  {/* <button onClick={''} className='outline-btn'></button> */}
                   
 
                 </div>
-                {/* <div className={see===true?"doApper":"doDisappear"}>
-                <div className="cover" >
-
                
-
-
-                <div className="cover_sub">
-                  <h1>
-                    What we do?
-                  </h1>
-                  <ul>
-                    <li>
-                    Offering access to high-quality education and scholarships;
-                    </li>
-                    <li>
-                    Providing information on unexplored opportunities through Edu Clinic workshops; and
-                    </li>
-                    <li>
-                    Poviding mentorship for career decision-making and smooth transitions.
-                    </li>
-                  </ul>
-                  <div>By connecting these dedicated students with the resources, they need, we aim to support the development of future leaders who will transform societies and Ghana.</div>
-                </div>
-                </div>
-                </div> */}
             
             </div>
           </div>
         </div>
-        <OnlineCourses />
+         {/*<OnlineCourses />*/}
       </section>
     </>
   )

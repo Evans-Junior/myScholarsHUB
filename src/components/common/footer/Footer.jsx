@@ -31,16 +31,20 @@ const Footer = () => {
       </section>
       <footer>
         <div className='container padding'>
-          <div className='box logo'>
+          <div className=' logo'>
             <h1>myScholarsHUB</h1>
             <span>Where preparedness meets opportunity.</span>
-            <p>"An investment in knowledge pays the best interest." - Benjamin Franklin</p>
+            <div className="set_group">
+            <p className="footer_advicer">"An investment in knowledge pays the best interest." - Benjamin Franklin</p>
             <div className="social_media">
-            <a href=""> <img src="./images/icons/linkedin.png" width={30} className="linkedin"/></a>
+            <a href=""> <img src="./images/icons/linkedin.png" width={30} className="fab linkedin"/></a>
             <i className='fab fa-twitter icon'></i>
             <i className='fab fa-instagram icon'></i>
             </div>
+            
+            </div>
           </div>
+          {/*
           <div className='box link'>
             <h3>Explore</h3>
             <ul>
@@ -79,11 +83,11 @@ const Footer = () => {
                 </div>
               </div>
             ))}
-          </div>
+            </div>*/}
           <div className='box last'>
-            <h3>Have a Questions?</h3>
+            <h3 className="title_question">Have a Questions?</h3>
             <ul>
-              <li>
+              <li className='flow'>
                 <i className='fa fa-map'></i>
                 1 University Avenue, Berekuso; PMB CT 3, Cantonments, Accra, Ghana.
               </li>

@@ -180,13 +180,14 @@ p {
   }
 }
 
-/* Evans */
+@media screen and (max-width: 400px) {
+}
+
+
 
 
 /*--Partners--*/
-.partners-home{
-  /* padding-top: 75px; */
-}
+
 
 
 .partners_list_collaborators{

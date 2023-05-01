@@ -78,6 +78,9 @@
   background-position: center;
   height: 30vh;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .awrapper .box {
   padding: 70px 0;
@@ -259,6 +262,12 @@ max-width: 300px;
   max-width: 400px;
 }
 
+.box1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 .container .card .icon {
@@ -277,6 +286,14 @@ max-width: 300px;
 
   border-radius: 0;
 
+}
+
+.grid{
+  padding: auto;
+}
+
+.text_one{
+  width: 500px;
 }
 
 .container .card .icon {

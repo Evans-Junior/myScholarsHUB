@@ -24,7 +24,6 @@ export default function Cards({title,details}) {
     </div>
     </div>
     
-
 </div>
     </div>
   )
