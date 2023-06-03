@@ -251,7 +251,7 @@ flex-direction:column;
 }
 
 
-@media screen and (min-width: 400px) and (max-width: 420px) {
+@media screen and (min-width: 400px) and (max-width: 500px) {
   .grid2{
   display: flex;
   flex-direction: column;

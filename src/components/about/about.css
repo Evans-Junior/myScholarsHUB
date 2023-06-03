@@ -592,7 +592,7 @@ p {
   }
 }
 
-@media screen and (min-width: 390px) and (max-width: 420px)  {
+@media screen and (min-width: 390px) and (max-width: 500px)  {
 
   .list_partners {
     display: flex;
@@ -637,24 +637,6 @@ p {
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 80px;
 }
-
-}
-
-
-
-
-/*--Partners--*/
-
-
-
-
-
-
-/* For small devices */
-@media screen and (min-width: 390px) and (max-width: 420px) {
-/* .right .row{
-  margin-top: 1500px;
-} */
 
 
 .aboutHome{

@@ -62,7 +62,7 @@ form .flexSB input:nth-child(1) {
 }
 
 
-@media screen and (min-width: 390px) and (max-width: 420px) {
+@media screen and (min-width: 390px) and (max-width: 500px) {
   .contacts iframe {
     height: 30vh;
   }
