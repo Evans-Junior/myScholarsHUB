@@ -592,7 +592,7 @@ p {
   }
 }
 
-@media screen and (min-width: 390px) and (max-width: 500px)  {
+@media screen and (min-width: 390px) and (max-width: 640px)  {
 
   .list_partners {
     display: flex;
