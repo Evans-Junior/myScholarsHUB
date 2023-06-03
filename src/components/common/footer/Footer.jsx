@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
           <form ref={form} onSubmit={sendEmail} className='contact__form'>
           <div className='right row'>
-            <input  type='email' name="email" className="email_here" placeholder='Enter email address' />
+            <input type='email' name="email" className="email_here" placeholder='Enter email address' />
             <i className='fa fa-paper-plane'></i>
           </div>
           </form>

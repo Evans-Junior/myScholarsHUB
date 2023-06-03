@@ -14,8 +14,8 @@ export const homeAbout = [
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    title: "Princeton University",
-    desc: "Bachelor of Arts, Engineering, Health & Medicine, Education & Teaching, Mathematics, More..",
+    title: "Kwame Nkrumah University of Science and Technology",
+    desc: "Bachelor of Arts, Engineering, Health & Medicine, Education & Teaching, Mathematics, Biochemistry, Petroleum, Mechanical Engineering, Aerospace and More..",
   },
 ]
 export const awrapper = [
@@ -375,7 +375,7 @@ export const testimonal = [
     id: 1,
     name: "Emmanuel Dwamena",
     post: "University of Ghana",
-    desc: "Anokye Yaw Mark completed high school at Osei Kyeretwie SH, and is now a full scholarship beneficiary studying computer science. ",
+    desc: "Emmanuel Dwamena is a Computer Science student at University of Ghana. He is a beneficiary of the Dare2Dream Scholarship. As a Software Engineering enthusiast, he hope to employ technology to solve societal problems.",
     cover: "./images/students/st5.jpeg",
   },
   {

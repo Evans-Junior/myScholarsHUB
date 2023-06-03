@@ -46,8 +46,8 @@ background-color: #1eb2a6;
   
 }
 
-@media screen and (max-width: 400px) {
-.hero{
+@media screen and (min-width: 390px) and (max-width: 420px) {
+  .hero{
   position: absolute;
   top: 0;
   left: 0;
@@ -60,6 +60,16 @@ background-color: #1eb2a6;
   font-size: 0.8rem;
 }
 
+.row_header{
+  color: black;
+  /* margin-bottom: 2rem; */
+}
+
+
+.row_header2{
+  color: black;
+  margin-bottom: 5rem;
+}
 .button{
   display: flex;
   justify-content: space-evenly;
@@ -82,8 +92,12 @@ background-color: #1eb2a6;
 }
 
 .homeAbout{
-  margin-top: 300px;
+  margin-top: 10px;
 }
+
+/* .row {
+  margin-top: 150px;
+} */
 
 
 

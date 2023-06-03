@@ -72,7 +72,7 @@
 }
 /*----------awrapper------------*/
 .awrapper {
-  background-image: url("../../public/awrapper.webp");
+  /* background-image: url("../../public/awrapper.webp"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -81,6 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #473c3cbe;
 }
 .awrapper .box {
   padding: 70px 0;
@@ -88,6 +89,7 @@
 
 .awrapper img {
   margin-right: 30px;
+  color: #1eb2a6 !important;
 }
 .awrapper h1 {
   font-size: 50px;
@@ -95,6 +97,7 @@
 .awrapper h3 {
   font-size: 20px;
   font-weight: 500;
+  color: #000;
 }
 
 .about_text{
@@ -214,8 +217,19 @@ justify-content: center;
 
 
 .mission{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
   max-width: 800px;
   font-size: large;
+  margin: 0 0 0px 50px;
+
+}
+
+.mission_point{
+  align-items: left;
+  margin-bottom: 30px;
 }
 
 .last_pic{
@@ -250,16 +264,17 @@ padding-left: 85px;
 }
 
 .name{
-  font-size: small;
+  font-size: large;
 }
 
 .service_vision{
 max-width: 300px;
-
+text-align: left;
 }
 
 .service_goals{
   max-width: 400px;
+  text-align: left;
 }
 
 .box1{
@@ -288,8 +303,10 @@ max-width: 300px;
 
 }
 
+
 .grid{
-  padding: auto;
+  color: #a78d57;
+  /* padding: auto; */
 }
 
 .text_one{
@@ -318,8 +335,9 @@ max-width: 300px;
 }
 
 .details_card{
-  font-size: small;
-  line-height: 0.9rem;
+  font-size: medium;
+  line-height: 1.2rem;
+  text-align:justify;
 
 }
 
@@ -329,6 +347,8 @@ max-width: 300px;
   align-items: center;
   width: auto;
 }
+
+
 
 .container .card .icon .fa {
 
@@ -445,6 +465,8 @@ max-width: 300px;
 
 }
 
+
+
 .container .card .slide.slide2 .content h3 {
 
   margin: 0 0 10px 0;
@@ -485,6 +507,54 @@ max-width: 300px;
   
 }
 
+.partners_list_collaborators{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+
+.list_partners{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: clamp(4rem,0.6%,10rem);
+}
+
+.list_images{
+width: 100px;
+
+}
+
+.list_name{
+  font-size: small;
+  /* font-weight: 400; */
+}
+
+#heading {
+  text-align: center;
+  padding: 40px 0;
+}
+#heading h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1eb2a6;
+  text-transform: uppercase;
+}
+#heading h1 {
+  font-size: 45px;
+  margin: 100px 0 20px 0;
+  text-transform: capitalize;
+}
+p {
+  line-height: 30px;
+  font-size: 18px;
+}
+
 
 /*----------awrapper------------*/
 @media screen and (max-width: 768px) {
@@ -514,6 +584,7 @@ max-width: 300px;
 
   .service_head_vision{
     margin-top: 40px;
+    /* text-align: left; */
   }
 
   .intro_one{
@@ -521,4 +592,135 @@ max-width: 300px;
   }
 }
 
+@media screen and (min-width: 390px) and (max-width: 420px)  {
 
+  .list_partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  }
+
+  .list_images {
+    width: 80px;
+  }
+
+  .list_name {
+    font-size: small;
+  }
+
+  #heading {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+.about_text{
+  margin-top: 30%;
+  margin-left: 40px;
+  font-size: small;
+  align-items: center;
+
+}
+
+.Cards_container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 60px 10px;
+}
+
+.Cards_info{
+  border-radius: 1rem;
+}
+
+.partners_list_collaborators{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 80px;
+}
+
+}
+
+
+
+
+/*--Partners--*/
+
+
+
+
+
+
+/* For small devices */
+@media screen and (min-width: 390px) and (max-width: 420px) {
+/* .right .row{
+  margin-top: 1500px;
+} */
+
+
+.aboutHome{
+  margin-top: 160px;
+}
+
+.aboutHome .right {
+  padding: 0px 0px;
+}
+
+.grid{
+  grid:none;
+  color: #a78d57;
+}
+
+.awrapper h3 {
+  /* width: 50%; */
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+/* .homeAbout {
+  margin-top: 10px;
+} */
+
+.Cards_container{
+  display: flex;
+  flex-direction: column;
+}
+
+.service_goals{
+  margin:0 30px;
+}
+
+.intro_one {
+  margin-bottom: 0;
+}
+
+.goals {
+  padding: 40px;
+  background-color: #fff;
+  font-size: small;
+  border-radius: 10px;
+  width: 800px;
+  box-shadow: 2 solid #999999;
+  text-align: left;
+  /* padding-left: 85px; */
+}
+
+.name{
+  margin-top: 10px;
+}
+
+.details_card{
+  font-size: small;
+}
+
+.more_info {
+  padding: 0px 0px;
+}
+
+.service_head{
+  margin-top: 20px;
+  font-size: large;
+}
+
+}

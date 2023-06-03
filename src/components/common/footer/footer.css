@@ -136,11 +136,9 @@ footer .last i {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 390px) and (max-width: 420px)  {
   footer .container {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 3fr 2fr;
+    grid:none;
     
   }
 
@@ -179,5 +177,13 @@ footer .last i {
     margin-bottom: 20px;
   }
 
+.newletter i{
+  color: #1eb2a6;
+  }
+
+  .email_here{
+    min-width: 130px;
+  }
+ 
 }
 

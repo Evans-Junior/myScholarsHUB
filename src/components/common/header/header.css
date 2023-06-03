@@ -78,18 +78,20 @@ header ul li a:hover {
     top: 7vh;
     left: 0;
     width: 100%;
-    background-color: #1eb2a6;
+    background-color: #000000;
   }
 
   .fa-times{
-    color: #fff;
+    color: #000000;
   }
 }
 
 
 /* For small devices */
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 390px) and (max-width: 420px) {
   
+ 
+
   .toggle{
     position: fixed;
     top:-15px;
@@ -100,7 +102,8 @@ header ul li a:hover {
   }
 
   .logo >span{
-    color: rgba(65, 137, 245, 0.801);
+    /* color: rgba(65, 68, 245, 0.801);
+    font-weight: bold; */
   }
   #heading >h1{
     font-size: 01.3rem;

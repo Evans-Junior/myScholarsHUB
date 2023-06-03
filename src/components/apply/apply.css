@@ -53,7 +53,7 @@
    justify-content: center;
    align-items: center;
    background-color: #878484;
-   background-image: url("/public/images/students/students.jpg");
+   background-image: url("/public/images/svg/plansback.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; 
@@ -62,9 +62,10 @@
 }
 
 .whyus-title{
-color: #f8f8f8;
+color: #ffffff;
 margin-bottom: 2%;
-font-size: calc(2rem,3rem,4rem);
+font-size: 40px;
+font-weight: 800;
 
 }
 
@@ -95,11 +96,17 @@ font-size: calc(2rem,3rem,4rem);
 
 }
 
+.lineBetween{
+   width: 1px;
+   height: 300px; 
+   display: inline-block;
+}
+
 .selectionProcess{
     background-color: #fff;
     padding: 120px 50px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 44% 2% 44%;
     justify-content: center;
     align-items: center;
 }
@@ -107,6 +114,8 @@ font-size: calc(2rem,3rem,4rem);
 .firstColumn{
     display: flex;
     flex-direction: column;
+    color: #1eb2a6;
+    text-align: center;
     /* font-size: 0.6rem; */
 }
 
@@ -126,7 +135,7 @@ font-size: calc(2rem,3rem,4rem);
 
 .SecondColumn-header{
     padding: 10px 30px;
-
+    color: #1eb2a6;
 }
 
 .SecondColumn-contents{
@@ -141,6 +150,7 @@ font-size: calc(2rem,3rem,4rem);
     font-size: 0.8rem;
     line-height: 17px;
     padding-top: 7px;
+    
 }
 
 .Disclaimer-group{
@@ -167,7 +177,7 @@ font-size: calc(2rem,3rem,4rem);
 }
 
 .Disclaimers >p{
-    font-size: small;
+    font-size: medium;
     line-height: 25px;
     color: #5b5757;
 }
@@ -212,3 +222,42 @@ font-size: calc(2rem,3rem,4rem);
     }
     
   }
+
+  @media screen and (min-width: 390px) and (max-width: 420px) {
+    .selectionProcess {
+        background-color: #fff;
+        padding: 90px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .firstColumn{
+        margin-left: 30px;
+    }
+
+    .Disclaimer-group {
+        display: flex;
+        background-image: none;
+    }
+
+    .apply-title{
+        margin: 60% 0;
+    }
+
+    .whyus-title{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .lineBetween{
+        display: none;
+    }
+
+    .Disclaimers >P{
+        font-size: small;
+    }
+
+    .firstColumn {
+        margin-left: 0;
+    }
+  }
+

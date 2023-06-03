@@ -39,8 +39,13 @@
 
 }
 
-@media screen and (max-width: 400px) {
-/* .about_students{
+@media screen and (min-width: 390px) and (max-width: 420px) {
+  /* .about_students{
   font-size: 0.7rem;
 } */
+
+.messageBlog{
+  margin-top: 100px;
+  width: 500px;
+}
 }

@@ -12,11 +12,13 @@
   --max-lines:5;
   --line-height:1.4;
   display: flex;
+  flex-direction: column;
   max-height: calc(var(--max-lines) * 1rem * var(--line-height));
   line-height: var(--line-height);
   overflow: hidden;
   position: relative;
 }
+
 
 .cut-off:has(+.outline-btn:not(:checked))::before{
   content: '';
@@ -249,7 +251,7 @@ flex-direction:column;
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 400px) and (max-width: 420px) {
   .grid2{
   display: flex;
   flex-direction: column;
@@ -265,4 +267,31 @@ flex-direction:column;
     line-height: 0.7rem;
   }
 
+  .opportunities{
+    margin-top: 10px; 
+  }
+
+  .coursesCard {
+    padding: 0px 0;
+}
+
+.coursesCard .items {
+    background-color: transparent;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.cut-off {
+  font-size: 1rem;
+  line-height: 1rem;
+
+}
+
+.cut-off >ul{
+margin-top: 1rem;
+}
+
+.space_new{
+  line-height: 2rem;
+}
 }

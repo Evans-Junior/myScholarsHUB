@@ -1,6 +1,7 @@
 import React from 'react'
 import {partners} from "../../dummydata"
 import Heading from '../common/heading/Heading'
+import "../../App.css"
 
 export default function Hpartners() {
   return (

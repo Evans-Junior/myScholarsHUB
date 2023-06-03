@@ -6,6 +6,7 @@ import AboutFirst from "./AboutFirst"
 import Home from "./Home"
 import Hpartners from "./Hpartners"
 
+
 const About = () => {
   return (
     <>

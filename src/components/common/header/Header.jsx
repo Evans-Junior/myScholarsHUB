@@ -21,9 +21,7 @@ const Header = () => {
       window.removeEventListener('scroll', listenScrollEvent);
   }, []);
 
-function scrollFunction() {
-  
-}
+
 
 
   return (
