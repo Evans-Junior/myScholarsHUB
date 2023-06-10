@@ -21,14 +21,14 @@ export const homeAbout = [
 export const awrapper = [
   {
     cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
-    data: "8.8 billion",
-    title: "awarded scholarships all over the world",
+    data: "There are somany opportunities out there",
+    title: "awarding scholarships all over the world",
   },
 
   {
     cover: "https://img.icons8.com/ios/80/ffffff/athlete.png",
-    data: "1.7 million",
-    title: "people have scholarships with private scholarships",
+    data: "A total of 8.8 billion people are awarded scholarships all over the world, and 1.7 million",
+    title: "of these scholarships are private scholarships",
   },
   // {
   //   cover: "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
@@ -247,20 +247,20 @@ export const team = [
   {
     cover: "./images/team/max.jpeg",
     name: "Maxwell B. Antwi",
-    work: "Founder and President",
+    work: "Co-founder and President",
   },
   {
     cover: "./images/team/man.jpeg",
     name: "Mansura M. Lawal",
-    work: "Co-founder and project cordinator",
+    work: "Co-founder and Project Cordinator",
   },
   {
-    cover: "./images/team/eva1.jpeg",
+    cover: "./images/team/ep.png",
     name: "Evans Kumi",
-    work: "Developer and Lead Instructor",
+    work: "Co-founder and Software Developer",
   },
   {
-    cover: "./images/students/st1.jpeg",
+    cover: "./images/team/sp.png",
     name: "Anokye Y. Mark",
     work: "Logistics Manager",
   },

@@ -2,7 +2,7 @@
   transition: 0.5s;
 }
 .team .img {
-  position: relative;
+  /* position: relative; */
 }
 .team img {
   width: 100%;
@@ -53,4 +53,10 @@
 .team .items:hover .overlay i:hover {
   background-color: #1eb2a6;
   color: #fff;
+}
+
+@media screen and (min-width: 280px) and (max-width: 420px) {
+  /* .img > img {
+    height: 100%;
+  } */
 }
