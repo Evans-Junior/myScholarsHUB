@@ -146,14 +146,13 @@ justify-content:center;
   border-radius: 12px;
 }
 
-.service_text
 
 .intro_to_service{
 width: 500px;
 background-color: #ffffff;
-padding: 10px 40px;
+padding: 10px 40px 60px 40px;
 border-radius: 1rem;
-text-align: left;
+text-align: center;
 display: flex; 
 flex-direction: column;
 justify-content: center;
@@ -268,14 +267,14 @@ padding-left: 85px;
 }
 
 .service_vision{
-max-width: 300px;
+/* max-width: 300px; */
 text-align: left;
 }
 
-.service_goals{
+/* .service_goals{
   max-width: 400px;
   text-align: left;
-}
+} */
 
 .box1{
   display: flex;
@@ -601,7 +600,10 @@ p {
 }
 
 @media screen and (min-width: 280px) and (max-width: 420px)  {
+.about_page h1{
 
+  font-size: 30px;
+}
 
   #heading h3 {
     font-weight: 600;
@@ -632,7 +634,7 @@ p {
   }
 
 .about_text{
-  margin-top: 30%;
+  margin-top: 50%;
   margin-left: 40px;
   font-size: small;
   align-items: center;
@@ -688,6 +690,28 @@ p {
 
 .service_goals{
   margin:0 30px;
+  font-size: small;
+  max-width: 400px;
+  text-align: center;
+  line-height: 30px
+}
+.mission{
+  margin: 0;
+  padding: 20px;
+}
+
+.mission_point {
+  align-items: left;
+  margin-bottom: 30px;
+  line-height: 30px;
+  font-size: small;
+}
+
+.service_vision {
+  max-width: 300px;
+  text-align: center;
+  font-size: small;
+  line-height: 30px;
 }
 
 .intro_one {
@@ -707,6 +731,7 @@ p {
 
 .name{
   margin-top: 10px;
+  font-size: small;
 }
 
 .details_card{

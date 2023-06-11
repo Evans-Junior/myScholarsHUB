@@ -71,7 +71,8 @@ const[open,setOpen]=useState(true);
               </li>
               <li>
                 <i className='fa fa-paper-plane'></i>
-                myscholarshub2@gmail.com
+                myscholarshub.uni@gmail.com
+
               </li>
             </ul>
           </div>

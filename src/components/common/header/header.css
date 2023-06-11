@@ -105,6 +105,7 @@ header ul li a:hover {
 
   .logo >span{
     font-size: small;
+    font-weight: 500;
   }
   #heading >h1{
     font-size: 01.3rem;

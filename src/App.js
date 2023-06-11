@@ -11,26 +11,51 @@ import Contact from "./components/contact/Contact"
 import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
 import Apply from "./components/apply/Apply"
-import ClipLoader from "react-spinners/ClipLoader";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 function App() {
-  const [loading,setLoading]=useState()
+  const [loading,setLoading]=useState(false)
+
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(()=>{
+      setLoading(false)
+    },3000)
+  },[])
+
   return (
     <>
       <Router>
-        <Header/>
+      {
+        
+        loading?
+        <div className='loader'>
+        <ClimbingBoxLoader 
+        size={10}
+        color={"#d79237"}
+        loading={loading}
+        />
+        <p>Loading ...</p>
+        </div>
+        
+        :
+        <>
+        <Header />
         <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/opportunities' component={CourseHome} />
-          <Route path='/team' component={Team} />
-          <Route path='/pricing' component={Pricing} />
-          <Route path='/Blogs' component={Blog} />
-          <Route path='/contact' component={Contact} />
-          <Route path='/login' component={Contact} />
-          <Route path='/Apply' component={Apply} />
+              <Route exact path='/' component={Home} />
+              <Route path='/about' component={About} />
+              <Route path='/opportunities' component={CourseHome} />
+              <Route path='/team' component={Team} />
+              <Route path='/pricing' component={Pricing} />
+              <Route path='/Blogs' component={Blog} />
+              <Route path='/contact' component={Contact} />
+              <Route path='/login' component={Contact} />
+              <Route path='/Apply' component={Apply} />
         </Switch>
         <Footer />
+            </>
+      }
+        
       </Router>
     </>
   )

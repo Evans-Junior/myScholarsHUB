@@ -4,6 +4,9 @@
   border: none;
 }
 
+.contacts i{
+  color: #1eb2a6 !important;
+}
 
 .left{
   /* background-image: url(/public/images/blog/blogCover.jpg); */

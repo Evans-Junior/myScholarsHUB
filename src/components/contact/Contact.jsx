@@ -1,8 +1,27 @@
-import React from "react"
+import React,{ useRef,useState } from "react"
 import Back from "../common/back/Back"
 import "./contact.css"
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+  const[open,setOpen]=useState(true);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_dv5j5kh', 'template_dhzhmvh', form.current, 'curQix_GutZKg2kwj')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      setOpen(!open)
+      form.current.reset();
+  };
+
+
   // const map = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d904726.6131739549!2d85.24565535!3d27.65273865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1652535615693!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" '
   return (
     <>
@@ -24,7 +43,8 @@ const Contact = () => {
               </div>
               <div className='box'>
                 <h4>EMAIL:</h4>
-                <p> myscholarshub2@gmail.com</p>
+                <p> myscholarshub.uni@gmail.com
+</p>
               </div>
               <div className='box'>
                 <h4>PHONE:</h4>
@@ -33,14 +53,17 @@ const Contact = () => {
               </div>
             </div>
 
-            <form action=''>
+            <form ref={form} onSubmit={sendEmail}>
               <div className='flexSB'>
-                <input type='text' placeholder='Name' />
-                <input type='email' placeholder='Email' />
+                <input type='text' placeholder='Name' name="user_name" required/>
+                <input type='email' placeholder='Email' name="user_email" required/>
               </div>
-              <input type='text' placeholder='Subject' />
-              <textarea cols='30' rows='10' placeholder="Create a message here..."/>
-              <button className='primary-btn'>SEND MESSAGE</button>
+              <input type='text' placeholder='Subject' name="user_subject" required/>
+              <textarea cols='30' rows='10' placeholder="Create a message here..." name="message" required/>
+              <button className='primary-btn' type="submit" value="Send">SEND MESSAGE</button>
+              {open?"":<h3 clasName="delivered_message">Sent <i class="fa fa-check-circle" id="del" aria-hidden="true"></i></h3> }
+
+              
             </form>
 
             <h3>Follow us here</h3>

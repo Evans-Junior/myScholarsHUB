@@ -47,6 +47,11 @@ background-color: #1eb2a6;
 }
 
 @media screen and (min-width: 280px) and (max-width: 420px) {
+  .hero #heading h3 {
+    color: #fff;
+    margin-top: 100px;
+}
+
   .hero{
   position: absolute;
   top: 0;
@@ -69,6 +74,7 @@ background-color: #1eb2a6;
 .row_header2{
   color: black;
   margin-bottom: 5rem;
+  font-weight: 500;
 }
 .button{
   display: flex;
