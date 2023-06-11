@@ -544,6 +544,7 @@ width: 100px;
   letter-spacing: 1px;
   color: #1eb2a6;
   text-transform: uppercase;
+  margin-top: 100px;
 }
 #heading h1 {
   font-size: 45px;
@@ -590,9 +591,25 @@ p {
   .intro_one{
     margin-top: 0;
   }
+
+  #heading h1 {
+    font-size: 45px;
+    margin: 150px 0 20px 0;
+    text-transform: capitalize;
+}
+
 }
 
 @media screen and (min-width: 280px) and (max-width: 420px)  {
+
+
+  #heading h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #1eb2a6;
+    text-transform: uppercase;
+    margin-top: 200px;
+}
 
   .list_partners {
     display: flex;
@@ -707,7 +724,7 @@ p {
 
 #heading h1 {
   font-size: 35px;
-  margin: 200px 0 0px 0;
+  margin: 100px 0 0px 0;
   text-transform: capitalize;
 }
 

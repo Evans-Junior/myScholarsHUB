@@ -172,8 +172,19 @@ display: flex;
 flex-direction: column;
 }
 
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
+.row {
+  width: 100%;
+}
 
+.padding {
+    padding: 0px 0;
+}
 
 }
 

@@ -11,8 +11,13 @@
   color: #fff;
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin: 15px 0 15px 0px;
 }
+
+.newletter span{
+  /* margin: 15px ; */
+}
+
 .newletter .right {
   display: flex;
   justify-content: space-between;
@@ -53,10 +58,18 @@ footer .container {
   grid-template-columns: 3fr 2fr;
   grid-gap: 30px;
 }
+
+.newletter .right, .newletter .left {
+  padding: 20px;
+}
+
 @media screen and (max-width: 768px) {
   footer .container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+
+
 }
 footer .logo span {
   color: #1eb2a6;
@@ -202,6 +215,35 @@ footer .last i {
     min-width: 130px;
   }
 
-
+  .newletter span {
+    font-size: 15px;
 }
+
+  .newletter h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0 15px 0px;
+}
+
+.newletter .right{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact__form {
+  width: 100%;
+}
+
+.newletter input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  height: 30px;
+  /* margin-top: 30px; */
+}
+
+  }
 
