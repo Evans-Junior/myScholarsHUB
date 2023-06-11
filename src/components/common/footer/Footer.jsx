@@ -80,7 +80,7 @@ const[open,setOpen]=useState(true);
       </footer>
       <div className='legal'>
         <p>
-          Copyright ©2023 All rights reserved | This template is made with <i className='fa fa-heart'></i> @future codes
+          Copyright ©2023 All rights reserved | This template is made by <i className='fa fa-heart'></i> @future codes
         </p>
       </div>
     </>
