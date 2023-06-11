@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import "./App.css"
 import Header from "./components/common/header/Header"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
@@ -11,8 +11,10 @@ import Contact from "./components/contact/Contact"
 import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
 import Apply from "./components/apply/Apply"
+import ClipLoader from "react-spinners/ClipLoader";
 
 function App() {
+  const [loading,setLoading]=useState()
   return (
     <>
       <Router>

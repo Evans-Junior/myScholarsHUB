@@ -9,7 +9,7 @@ const Contact = () => {
       <Back title='Contact us' />
       <section className='contacts padding'>
         <div className='container shadow flexSB'>
-          <div className='left row'>
+          <div className='left row background'>
               
           </div>
           <div className='right row'>

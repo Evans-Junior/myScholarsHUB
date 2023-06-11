@@ -4,13 +4,14 @@
   border: none;
 }
 
+
 .left{
   /* background-image: url(/public/images/blog/blogCover.jpg); */
   background-color: rgb(27, 25, 25);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; 
-  padding: 20px;
+  /* padding: 20px; */
 }
 .contacts .right {
   padding: 50px;
@@ -70,7 +71,8 @@ form .flexSB input:nth-child(1) {
   }
 
   .left{
-    padding: 0 10;
+      /* padding: 20px; */
+
   }
 
   .left > h1{

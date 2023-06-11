@@ -705,4 +705,23 @@ p {
   font-size: large;
 }
 
+#heading h1 {
+  font-size: 35px;
+  margin: 200px 0 0px 0;
+  text-transform: capitalize;
+}
+
+.aboutHome img {
+  width: 50px;
+  height: 50px;
+}
+
+.aboutHome .items {
+  margin-top: 0px;
+}
+
+.aboutHome .item p {
+  color: #999999;
+  font-size: 15px;
+}
 }

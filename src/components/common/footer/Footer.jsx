@@ -1,17 +1,29 @@
-import React,{useRef } from "react"
+import React,{useState } from "react"
 import { blog } from "../../../dummydata"
 import "./footer.css"
 import emailjs from '@emailjs/browser';
 
 
 const Footer = () => {
-  const form = useRef();
+
+const[email,setEmail]=useState("");
+const[open,setOpen]=useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(email)
 
-    emailjs.sendForm('service_2ch24lm', 'template_y41zxpf', form.current, 'oyhKpuE8pEN_nUEBp')
-   e.target.reset()
+    const content={
+      from_name:email,
+    }
+    emailjs.send('service_dv5j5kh', 'template_wt81n0c', content, 'curQix_GutZKg2kwj')
+    .then((response) => {
+        setOpen(!open)
+      console.log('SUCCESS!', response.status, response.text);
+   }, (err) => {
+      console.log('FAILED...', err);
+   });
+  setEmail("")
   };
   return (
     <>
@@ -21,12 +33,13 @@ const Footer = () => {
             <h1>Newsletter - Stay tune and get the latest update</h1>
             <span>Education is the passport to the future, for tomorrow belongs to those who prepare for it today." - Malcolm X.</span>
           </div>
-          <form ref={form} onSubmit={sendEmail} className='contact__form'>
+          <div className={open?'contact__form':"delivered"}>
           <div className='right row'>
-            <input type='email' name="email" className="email_here" placeholder='Enter email address' />
-            <i className='fa fa-paper-plane'></i>
+          {open?<input type='email' name="email" className="email_here" placeholder='Enter email address' onChange={(e)=>{setEmail(e.target.value)}} required/>:""}
+          {open?<i className='fa fa-paper-plane' name='submit' type='submit' onClick={sendEmail}></i>:""}
+            {open?"":<h3 clasName="delivered">Sent <i class="fa fa-check-circle" id="del" aria-hidden="true"></i></h3> }
           </div>
-          </form>
+          </div>
         </div>
       </section>
       <footer>
@@ -44,46 +57,7 @@ const Footer = () => {
             
             </div>
           </div>
-          {/*
-          <div className='box link'>
-            <h3>Explore</h3>
-            <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Blog</li>
-              <li>Contact us</li>
-            </ul>
-          </div>
-          <div className='box link'>
-            <h3>Quick Links</h3>
-            <ul>
-              <li>Pricing</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy</li>
-              <li>Feedbacks</li>
-            </ul>
-          </div>
-          <div className='box'>
-            <h3>Recent Post</h3>
-            {blog.slice(0, 3).map((val) => (
-              <div className='items flexSB'>
-                <div className='img'>
-                  <img src={val.cover} alt='' />
-                </div>
-                <div className='text'>
-                  <span>
-                    <i className='fa fa-calendar-alt'></i>
-                    <label htmlFor=''>{val.date}</label>
-                  </span>
-                  <span>
-                    <i className='fa fa-user'></i>
-                    <label htmlFor=''>{val.type}</label>
-                  </span>
-                  <h4>{val.title.slice(0, 40)}...</h4>
-                </div>
-              </div>
-            ))}
-            </div>*/}
+
           <div className='box last'>
             <h3 className="title_question">Have a Questions?</h3>
             <ul>
