@@ -10,8 +10,8 @@ const Hblog = () => {
     <>
       <section className='blog'>
         <div className='container'>
-          <Heading subtitle='OUR BLOG' title='Stay tuned ...' />
-          {/*<Heading subtitle='OUR BLOG' title='Recent From Blog' />
+           <Heading subtitle='OUR BLOG' title='' />
+        {/*<Heading subtitle='OUR BLOG' title='Recent From Blog' /> */}
 
           <div className='grid2'>
             {blog.slice(0, 3).map((val) => (
@@ -22,15 +22,15 @@ const Hblog = () => {
                 <div className='text'>
                   <div className='admin flexSB'>
                     <span>
-                      <i className='fa fa-user'></i>
-                      <label htmlFor=''>{val.type}</label>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <label htmlFor=''>{val.location}</label>
                     </span>
                     <span>
                       <i className='fa fa-calendar-alt'></i>
                       <label htmlFor=''>{val.date}</label>
                     </span>
                     <span>
-                      <i className='fa fa-comments'></i>
+                      {/* <i className='fa fa-comments'></i> */}
                       <label htmlFor=''>{val.com}</label>
                     </span>
                   </div>
@@ -39,7 +39,7 @@ const Hblog = () => {
                 </div>
               </div>
             ))}
-            </div>*/}
+            </div>
         </div>
       </section>
     </>

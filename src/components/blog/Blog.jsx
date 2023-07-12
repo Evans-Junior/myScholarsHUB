@@ -10,7 +10,7 @@ const Blog = () => {
       <section className='blog padding'>
         <div className='container grid2'>
         <h2 className="messageBlog">You will hear from us soon...</h2>
-          {/* <BlogCard /> */}
+          <BlogCard />
         </div>
       </section>
     </>
