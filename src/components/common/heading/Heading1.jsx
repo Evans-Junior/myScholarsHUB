@@ -1,9 +1,10 @@
 import React from "react"
 
-const Heading = ({ subtitle, title,style_name}) => {
+
+const Heading1 = ({ subtitle, title,style_name}) => {
   return (
     <>
-      <div id='heading' className={style_name}>
+      <div id='heading1' className={style_name}>
         <h3 className={style_name}>{subtitle} </h3>
         <h1 className={style_name}>{title} </h1>
       </div>
@@ -11,4 +12,4 @@ const Heading = ({ subtitle, title,style_name}) => {
   )
 }
 
-export default Heading;
+export default Heading1;

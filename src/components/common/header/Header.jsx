@@ -50,8 +50,8 @@ const Header = () => {
               <Link to='/contact'>Contact</Link>
             </li>
           </ul>
-          <div className='start'>
-          </div>
+          {/* <div className='start'>
+          </div> */}
           <button className='toggle' onClick={() => setClick(!click)} id="style-1">
             {click ? <i className='fa fa-times'> </i> : <i onScroll={listenScrollEvent} className='fa fa-bars'></i>}
           </button>

@@ -1,5 +1,5 @@
 import React from "react"
-import Heading from "../common/heading/Heading"
+import Heading1 from "../common/heading/Heading1"
 import "./about.css"
 import { homeAbout } from "../../dummydata"
 import Awrapper from "./Awrapper"
@@ -13,7 +13,7 @@ const AboutCard = () => {
             <img src='./images/students/st3.jpeg' alt='' />
           </div>
           <div className='right row'>
-            <Heading subtitle='TAKE ADVANTAGE' title='Countless openings at these universities and institutions' />
+            <Heading1 subtitle='TAKE ADVANTAGE' title='Countless openings at these universities and institutions' />
             <div className='items'>
               {homeAbout.map((val) => {
                 return (

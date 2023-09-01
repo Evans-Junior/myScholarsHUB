@@ -599,18 +599,31 @@ p {
 
 }
 
-@media screen and (min-width: 280px) and (max-width: 420px)  {
+@media screen and (min-width: 280px) and (max-width: 767px)  {
 .about_page h1{
 
   font-size: 30px;
 }
 
-  #heading h3 {
+/* .aboutHome #heading {
+  text-align: left;
+  padding: 0;
+  z-index: 999;
+} */
+
+  #heading h3  {
     font-weight: 600;
     letter-spacing: 1px;
     color: #1eb2a6;
     text-transform: uppercase;
-    margin-top: 200px;
+}
+
+
+
+
+#heading {
+  padding: 200px 0 0 0;
+  z-index: 1;
 }
 
   .list_partners {
@@ -747,9 +760,12 @@ p {
   font-size: large;
 }
 
+
+
 #heading h1 {
   font-size: 35px;
-  margin: 100px 0 0px 0;
+  margin: 0 0 0px 0;
+  padding-top: 100px;
   text-transform: capitalize;
 }
 
@@ -758,9 +774,9 @@ p {
   height: 50px;
 }
 
-.aboutHome .items {
-  margin-top: 0px;
-}
+/* .aboutHome .items {
+  margin: 0px 0 20 0;
+} */
 
 .aboutHome .item p {
   color: #999999;
