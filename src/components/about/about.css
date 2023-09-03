@@ -543,8 +543,17 @@ width: 100px;
   letter-spacing: 1px;
   color: #1eb2a6;
   text-transform: uppercase;
-  margin-top: 100px;
+  margin-top: 10px;
 }
+
+#heading1 h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1eb2a6;
+  text-transform: uppercase;
+  margin-top: 70px;
+}
+
 #heading h1 {
   font-size: 45px;
   margin: 100px 0 20px 0;
@@ -599,7 +608,18 @@ p {
 
 }
 
-@media screen and (min-width: 280px) and (max-width: 767px)  {
+@media screen and (min-width: 767px) and (max-width: 1300px)  {
+  #heading1 h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #1eb2a6;
+    text-transform: uppercase;
+    margin-top: 410px;
+  }
+}
+
+
+@media screen and (min-width: 150px) and (max-width: 767px)  {
 .about_page h1{
 
   font-size: 30px;
@@ -610,6 +630,14 @@ p {
   padding: 0;
   z-index: 999;
 } */
+
+#heading1 h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1eb2a6;
+  text-transform: uppercase;
+  margin-top: 210px;
+}
 
   #heading h3  {
     font-weight: 600;

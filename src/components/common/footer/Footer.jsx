@@ -67,7 +67,7 @@ const[open,setOpen]=useState(true);
               </li>
               <li>
                 <i className='fa fa-phone-alt'></i>
-                +233 (0)50 508 81 7557
+                +233 (0)508 81 7557
               </li>
               <li>
                 <i className='fa fa-paper-plane'></i>

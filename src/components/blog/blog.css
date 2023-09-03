@@ -39,7 +39,14 @@
 
 }
 
-@media screen and (min-width: 280px) and (max-width: 420px) {
+
+@media screen and (max-width: 767px) {
+  /* .blog{
+    margin-top: 560px;
+    } */
+}
+
+@media screen and (min-width: 150px) and (max-width: 420px) {
   /* .about_students{
   font-size: 0.7rem;
 } */
@@ -48,4 +55,10 @@
   margin-top: 100px;
   width: 500px;
 }
+
+/* .blog{
+margin-top: 600px;
+} */
+
+
 }

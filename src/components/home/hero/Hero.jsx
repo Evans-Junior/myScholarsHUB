@@ -2,6 +2,8 @@ import React from "react"
 import Heading from "../../common/heading/Heading"
 import "./Hero.css"
 import {motion} from "framer-motion"
+import { Link } from "react-router-dom"
+
 
 function Hero (){
   return (
@@ -23,14 +25,14 @@ function Hero (){
               animate={{scale: 1}}
               transition={{duration: 1, delay: 0.5}}
             >
-              GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>
+              <Link className="home_get_started" to='/apply'>GET STARTED NOW</Link> <i className='fa fa-long-arrow-alt-right'></i>
             </motion.button>
             <motion.button
               initial={{x: 300}}
               animate={{x: 0}}
               transition={{duration: 1, ease: "easeInOut",delay: 0.5}}
             >
-              Explore <i className='fa fa-long-arrow-alt-right'></i>
+             <Link className="home_get_explore" to='/about'>Explore</Link>  <i className='fa fa-long-arrow-alt-right'></i>
             </motion.button>
           </div>
         </div>

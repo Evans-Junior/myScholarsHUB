@@ -25,6 +25,16 @@
 cursor: pointer;
 }
 
+.home_get_started{
+  color: #fff;
+    text-decoration: none;
+}
+
+.home_get_explore{
+  color: #1eb2a6;
+    text-decoration: none;
+}
+
 .button-explore:hover{
 color: #fff;
 background-color: #1eb2a6;
@@ -48,7 +58,7 @@ background-color: #1eb2a6;
 
 
 
-@media screen and (min-width: 280px) and (max-width: 768px) {
+@media screen and (min-width: 150px) and (max-width: 768px) {
   .hero #heading h3 {
     color: #fff;
     margin-top: 10px;
