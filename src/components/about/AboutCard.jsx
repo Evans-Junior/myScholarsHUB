@@ -21,10 +21,14 @@ const AboutCard = () => {
                     <div className='img'>
                       <img src={val.cover} alt='' />
                     </div>
+                    
+                    <a href={val.link} className="link_school" target="_blank">
                     <div className=''>
-                      <h2>{val.title}</h2>
+                    <h2>{val.title}</h2>
                       <p>{val.desc}</p>
                     </div>
+                    </a>
+                      
                   </div>
                 )
               })}

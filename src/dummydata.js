@@ -4,18 +4,21 @@ export const homeAbout = [
     cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
     title: "Ashesi University",
     desc: "Bachelors of Business Administration, Management Information Systems, Computer Science, Computer Engineering, Electrical and Electronic Engineering, Mechanical Engineering. Masters of Mechatronic Engineering.",
+    link:"https://www.ashesi.edu.gh/",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
     title: "University of Ghana",
     desc: "Bachelor of Science in Information Technology, Medicine and Bachelor of Surgery, Dietetics, Medical Laboratory Sciences, Business Administration, More...",
+    link:"https://www.ug.edu.gh/",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
     title: "Kwame Nkrumah University of Science and Technology",
     desc: "Bachelor of Arts, Engineering, Health & Medicine, Education & Teaching, Mathematics, Biochemistry, Petroleum, Mechanical Engineering, Aerospace and More..",
+    link:"https://www.knust.edu.gh/",
   },
 ]
 export const awrapper = [
@@ -70,6 +73,7 @@ export const coursesCard = [
     priceAll: "$200 All Course",
     pricePer: "$25 per month",
   },
+
   // {
   //   id: 3,
   //   cover: "../images/courses/c3.png",
@@ -169,6 +173,34 @@ export const coursesCard = [
   //   pricePer: "$3 per month",
   // },
 ]
+
+export const social_media=[
+    {
+      id:1,
+      icon:"fab fa-facebook-f icon",
+      link:"https://www.facebook.com/myscholarshub/",
+    },
+    {
+      id:2,
+      icon:"fab fa-instagram icon",
+      link:"https://instagram.com/myscholarshub/",
+    },
+    // {
+    //   id:3,
+    //   logo:"fab fa-twitter icon",
+    //   link:"https://instagram.com/myscholarshub/",
+    // },
+    {
+      id:3,
+      icon:"fab fa-youtube icon",
+      link:"https://www.youthop.com/post",
+    },
+
+    
+
+
+]
+
 export const online = [
   {
     cover: "./images/courses/online/o1.png",

@@ -19,7 +19,7 @@
 /*--------header------------*/
 header {
   /* background-color: rgba(255, 255, 255, 0.2); */
-  margin: 0 30px;
+  margin: 0 60px;
 }
 header .nav {
   display: flex !important;
@@ -44,6 +44,21 @@ header ul li a:hover {
 .toggle {
   display: none;
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+
+}
+
+.fab.fa-facebook-f.icon::after{
+  color: transparent !important;
+
+}
+
+
 /*--------header------------*/
 @media screen and (max-width: 768px) {
   .start {
@@ -86,6 +101,10 @@ header ul li a:hover {
   }
 }
 
+/* .social_media_link{
+  background-color: #1eb2a6;
+} */
+
 
 /* For small devices */
 @media screen and (min-width: 150px) and (max-width: 767px){
@@ -101,6 +120,7 @@ header ul li a:hover {
 
   .social {
     display: none;
+    
   }
 
   .logo >span{

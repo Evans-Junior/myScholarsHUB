@@ -9,7 +9,7 @@
 }
 
 .left{
-  /* background-image: url(/public/images/blog/blogCover.jpg); */
+  background-image: url(/public/images/blog/contact.jpg);
   background-color: rgb(27, 25, 25);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */

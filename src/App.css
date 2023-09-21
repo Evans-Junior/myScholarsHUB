@@ -113,6 +113,8 @@ button:hover {
   color: #fff;
   text-align: center;
 }
+
+
 .back h1 {
   font-size: 100px;
   font-weight: 400;
@@ -122,6 +124,7 @@ button:hover {
   font-size: 17px;
   text-transform: uppercase;
 }
+
 .margin {
   margin-top: 40.3%;
 }

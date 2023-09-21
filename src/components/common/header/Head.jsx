@@ -1,5 +1,7 @@
 import React,{useEffect,useState} from "react"
 import {motion} from "framer-motion"
+import {social_media} from "../../../dummydata"
+import "./header.css"
 
 const Head = () => {
   const [text, setText] = useState("");
@@ -45,10 +47,15 @@ const Head = () => {
           </div>
 
           <div className='social'>
-            <motion.i whileHover={{scale: 1.5}} className='fab fa-facebook-f icon'></motion.i>
-            <motion.i whileHover={{scale: 1.5}} className='fab fa-instagram icon'></motion.i>
-            <motion.i whileHover={{scale: 1.5}} className='fab fa-twitter icon'></motion.i>
-            <motion.i whileHover={{scale: 1.5}} className='fab fa-youtube icon'></motion.i>
+          {
+            social_media.map((val)=>{
+              return(
+                <a href={val.link} className="social_media_link" target="_blank" rel="noreferrer">
+                <motion.i whileHover={{scale: 1.5}} initial={{ x: -100, y: -100, opacity: 0.6 }} className={val.icon}></motion.i>
+                </a>
+              )
+            })
+          }
           </div>
         </div>
       </section>
