@@ -46,7 +46,7 @@ const Head = () => {
             <span>Where preparedness meets opportunities.</span>
           </div>
 
-          <div className='social'>
+          {/* <div className='social'>
           {
             social_media.map((val)=>{
               return(
@@ -56,7 +56,7 @@ const Head = () => {
               )
             })
           }
-          </div>
+          </div> */}
         </div>
       </section>
     </>
