@@ -1,0 +1,30 @@
+.opportunity_page{
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+    width: 100%;
+    height: 100%;
+    padding-top: 13%;
+    padding-right: 50px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0 100px 0;
+  
+  }
+
+  .White-gradient{
+    position: absolute;
+    top: 2;
+    left: 0;
+    width: 15rem;
+    height: 15rem;
+    background: rgba(255 , 255, 255, 0.522);
+    filter: blur(100px);
+    border-radius: 100px;
+  }

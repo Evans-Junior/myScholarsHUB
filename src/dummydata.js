@@ -402,6 +402,71 @@ export const blog = [
   //   cover: "../images/blog/b6.webp",
   // },
 ]
+
+export const opportunities = [
+  {
+    id: 1,
+    title: "Ashesi University",
+    desc: "Bachelors of Business Administration, Management Information Systems, Computer Science, Computer Engineering, Electrical and Electronic Engineering, Mechanical Engineering. Masters of Mechatronic Engineering.",
+    cover: "./images/opportunities/ashesi.jpeg",
+  },
+
+  {
+    id: 2,
+    title: "University of Ghana",
+    desc: "Bachelor of Science in Information Technology, Medicine and Bachelor of Surgery, Dietetics, Medical Laboratory Sciences, Business Administration, More...",
+    cover: "./images/opportunities/uni.jpeg",
+  },
+  {
+    id: 3,
+    title: "Kwame Nkrumah University of Science and Technology",
+    desc: "Bachelor of Arts, Engineering, Health & Medicine, Education & Teaching, Mathematics, Biochemistry, Petroleum, Mechanical Engineering, Aerospace and More..",
+    cover: "./images/opportunities/knust.jpeg",
+  },
+  {
+    id: 4,
+    title: "University of Cape Coast",
+    desc: "Bachelor of Commerce, Bachelor of Science in Nursing, Bachelor of Science in Midwifery, Bachelor of Science in Medical Laboratory Technology, Bachelor of Science in Physiotherapy, Bachelor of Science in Optometry, Bachelor of Science in Information Technology, Bachelor of Science in Computer Science, Bachelor of Science in Agriculture, Bachelor of Science in Biochemistry, Bachelor of Science in Chemistry, Bachelor of Science in Mathematics, Bachelor of Science in Physics, Bachelor of Science in Statistics, Bachelor of Science in Actuarial Science, Bachelor of Science in Meteorology and Atmospheric Physics, Bachelor of Science in Oceanography and Fisheries, Bachelor of Science in Psychology, Bachelor of Science in Environmental Science, Bachelor of Science in Fisheries and Aquatic Science, Bachelor of Science in Biochemistry, Bachelor of Science in Chemistry, Bachelor of Science in Mathematics, Bachelor of Science in Physics, Bachelor of Science in Statistics, More...",
+    cover: "./images/opportunities/ucc.jpeg",
+  },
+  {
+    id: 5,
+    title: "University for Development Studies",
+    desc: "Bachelor of Science in Agriculture, Bachelor of Science in Agribusiness, Bachelor of Science in Agricultural Biotechnology, Bachelor of Science in Agricultural Technology, Bachelor of Science in Family and Consumer Sciences, Bachelor of Science in Forest Resources Conservation and Management, Bachelor of Science in Renewable Natural Resources, Bachelor of Science in Irrigation Technology, Bachelor of Science in Agricultural Extension, Bachelor of Science in Agricultural Economics, Bachelor of Science in Community Nutrition, Bachelor of Science in Food Science and Technology, Bachelor of Science in Veterinary Nursing, Bachelor of Science in Veterinary Medicine, Bachelor of Science in Nursing, Bachelor of Science in Midwifery, Bachelor of Science in Community Health and Development, Bachelor of Science in Medical Laboratory Technology, Bachelor of Science in Physiotherapy, Bachelor of Science in Sonography, Bachelor of Science in Diagnostic Imaging Technology, Bachelor of Science in Medical Imaging Technology, Bachelor of Science in Medical Rehabilitation, Bachelor of Science in Environmental Health and Sanitation, Bachelor of Science in Medical Laboratory Science, Bachelor of Science in Medical Imaging Technology, Bachelor of Science in Medical Sonography, Bachelor of Science in Community Nutrition, Bachelor of Science in Dietetics, Bachelor of Science in Nursing, Bachelor of Science in Midwifery, Bachelor of Science in Community Health and Development, Bachelor of Science in Medical Laboratory Technology, Bachelor of Science in Physiotherapy, Bachelor of Science in Sonography, Bachelor of Science in Diagnostic Imaging Technology, Bachelor of Science in Medical Imaging Technology, Bachelor of Science in Medical Rehabilitation, Bachelor of Science in Environmental Health and Sanitation, Bachelor of Science in Medical Laboratory Science, Bachelor of Science in Medical Imaging Technology, Bachelor of Science in Medical Sonography, Bachelor of Science in Community Nutrition, Bachelor of Science in Dietetics, More...",
+    cover: "./images/opportunities/uds.jpeg",
+  }
+]
+
+export const opp = [
+  {
+    id: 1,
+    name:'Ashesi University',
+    dueDate:"by 20th August 2024",
+    details:'We accept applications from students who have completed high school and have successfully passed their WASSCE exams. We also accept applications from students who have completed high school and have successfully passed their IGCSE exams. We accept applications from students who have completed high school and have successfully passed their WASSCE exams. We also accept applications from students who have completed high school and have successfully passed their IGCSE exams.',
+    link:'https://www.ashesi.edu.gh/about.html',
+    image:"./images/opp/ashesi.jpeg"
+    
+  },
+  {
+    id: 2,
+    name:'University of Ghana',
+    dueDate:"by 20th August 2024",
+    details:'We accept applications from students who have completed high school and have successfully passed their WASSCE exams. We also accept applications from students who have completed high school and have successfully passed their IGCSE exams. We accept applications from students who have completed high school and have successfully passed their WASSCE exams. We also accept applications from students who have completed high school and have successfully passed their IGCSE exams.',
+    link:'https://www.ug.edu.gh/',
+    image:"./images/opp/uni.jpeg"
+  },
+  {
+    id: 3,
+    name:'Software Engineering',
+    dueDate:"by 20th August 2024",
+    details:'We accept applications from students who have completed high school and have successfully passed their WASSCE exams. We also accept applications from students who have completed high school and have successfully passed their IGCSE exams. We accept applications from students who have completed high school and have successfully passed their WASSCE exams. We also accept applications from students who have completed high school and have successfully passed their IGCSE exams.',
+    link:'https://www.knust.edu.gh/',
+    image:"./images/opp/software.jpg"
+  },
+
+
+]
+
 export const testimonal = [
   {
     id: 1,

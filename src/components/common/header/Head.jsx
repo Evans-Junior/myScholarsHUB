@@ -43,7 +43,7 @@ const Head = () => {
         <div className='container flexSB'>
           <div className='logo'>
             <h1>my{text}</h1>
-            <span>Where preparedness meets opportunity.</span>
+            <span>Where preparedness meets opportunities.</span>
           </div>
 
           <div className='social'>

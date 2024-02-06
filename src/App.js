@@ -3,7 +3,6 @@ import "./App.css"
 import Header from "./components/common/header/Header"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import About from "./components/about/About"
-import CourseHome from "./components/allcourses/CourseHome"
 import Team from "./components/team/Team"
 import Pricing from "./components/pricing/Pricing"
 import Blog from "./components/blog/Blog"
@@ -12,6 +11,8 @@ import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
 import Apply from "./components/apply/Apply"
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import opportunities from './components/opportunities/opportunities';
+import FileNotFound from './components/FileNotFound/FileNotFound';
 
 function App() {
   const [loading,setLoading]=useState(false)
@@ -44,13 +45,12 @@ function App() {
         <Switch>
               <Route exact path='/' component={Home} />
               <Route path='/about' component={About} />
-              <Route path='/opportunities' component={CourseHome} />
+              <Route path='/apply' component={Apply} />
               <Route path='/team' component={Team} />
-              <Route path='/pricing' component={Pricing} />
+              <Route path='*' component={FileNotFound} />
               <Route path='/Blogs' component={Blog} />
               <Route path='/contact' component={Contact} />
               <Route path='/login' component={Contact} />
-              <Route path='/Apply' component={Apply} />
         </Switch>
         <Footer />
             </>
@@ -62,3 +62,4 @@ function App() {
 }
 
 export default App
+              {/* <Route path='/Apply' component={Apply} /> */}
