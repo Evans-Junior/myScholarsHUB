@@ -16,6 +16,7 @@ import FileNotFound from './components/FileNotFound/FileNotFound';
 
 function App() {
   const [loading,setLoading]=useState(false)
+  const [available, setAvailable] = useState(true);
 
   useEffect(()=>{
     setLoading(true)
@@ -28,7 +29,6 @@ function App() {
     <>
       <Router>
       {
-        
         loading?
         <div className='loader'>
         <ClimbingBoxLoader 
@@ -43,14 +43,14 @@ function App() {
         <>
         <Header />
         <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/about' component={About} />
-              <Route path='/apply' component={Apply} />
-              <Route path='/team' component={Team} />
-              <Route path='*' component={FileNotFound} />
-              <Route path='/Blogs' component={Blog} />
-              <Route path='/contact' component={Contact} />
-              <Route path='/login' component={Contact} />
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/apply' component={Apply} />
+        <Route path='/team' component={Team} />
+        <Route path='/Blogs' component={Blog} /> {/* Place before the '*' route */}
+        <Route path='/contact' component={Contact} />
+        <Route path='/login' component={Contact} />
+        <Route path='*' component={FileNotFound} /> {/* '*' route should be at the end */}
         </Switch>
         <Footer />
             </>

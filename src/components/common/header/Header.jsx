@@ -26,14 +26,6 @@ const Header = () => {
   
 
   useEffect(() => {
-    const changeBackground = () => {
-      const header = document.querySelector('.header-home');
-      if (header.backgroundColor==='white-background') {
-        header.bacjgroundColor = '#1eb2a6';
-      } else {
-        header.classList.add('white-background');
-      }
-    }
 
     window.addEventListener('scroll', listenScrollEvent);
 
