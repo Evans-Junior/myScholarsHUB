@@ -1,64 +1,181 @@
+:root {
+  --primary-color: #1eb2a6;
+  --secondary-color: grey;
+  --font-weight-bold: 500;
+  --font-size-small: 14px;
+  --font-size-medium: 18px; /* Reduced from 22px */
+  --line-height-medium: 24px; /* Reduced from 30px */
+  --transition-duration: 0.5s;
+  --padding-large: 20px 15px; /* Reduced from 40px 30px */
+  --margin-medium: 15px 0; /* Reduced from 20px 0 */
+}
+
 .blog img {
   width: 100%;
-  height: 100%;
+  height: auto; /* Adjust height to auto for better aspect ratio */
 }
+
 .blog .text {
-  padding: 40px 30px;
+  padding: var(--padding-large);
 }
-.blog h1 {
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 30px;
-  margin: 20px 0;
-  transition: 0.5s;
-}
-.blog h1:hover {
-  color: #1eb2a6;
+
+.clickable{
   cursor: pointer;
 }
+
+.blog h1 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+  margin: var(--margin-medium);
+  transition: var(--transition-duration);
+}
+
+.blog h1:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
 .blog span {
   text-transform: uppercase;
-  font-weight: 500;
-  color: #1eb2a6;
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
 }
+
 .blog span label {
   margin-left: 10px;
-  color: grey;
-  font-size: 14px;
+  color: var(--secondary-color);
+  font-size: var(--font-size-small);
 }
+
 .blog span:nth-last-child(1) label {
-  color: #1eb2a6;
+  color: var(--primary-color);
 }
+
 .blog p {
-  color: grey;
+  color: var(--secondary-color);
+  font-size: var(--font-size-small); /* Adjust paragraph font size */
 }
 
-
-.blog{
-  margin-bottom: 30px;
-
+.blog {
+  margin-bottom: 20px; /* Reduced from 30px */
 }
 
+/* Responsive Design */
 
 @media screen and (max-width: 767px) {
-  /* .blog{
-    margin-top: 560px;
-    } */
+  .blog .text {
+    padding: 15px 10px; /* Reduced padding for smaller screens */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .blog h1 {
+    font-size: 16px; /* Reduced from 20px */
+    line-height: 22px; /* Reduced from 28px */
+  }
+
+  .blog span label {
+    font-size: 12px;
+  }
+
+  .messageBlog {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 
-@media screen and (min-width: 150px) and (max-width: 420px) {
-  /* .about_students{
-  font-size: 0.7rem;
-} */
+@media screen and (max-width: 420px) {
+  .blog .text {
+    padding: 10px 5px; /* Reduced padding further for very small screens */
+  }
 
-.messageBlog{
-  margin-top: 100px;
-  width: 500px;
+  .blog h1 {
+    font-size: 14px; /* Reduced from 18px */
+    line-height: 20px; /* Reduced from 25px */
+  }
+
+  .blog span label {
+    font-size: 10px; /* Reduced font size for labels */
+  }
+
+  .about_students {
+    font-size: 0.7rem; /* Reduced from 0.8rem */
+  }
+
+  .messageBlog {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 
-/* .blog{
-margin-top: 600px;
-} */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
 
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
 
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content input,
+.modal-content textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #17a497;
 }

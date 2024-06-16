@@ -11,6 +11,16 @@
 
 }
 
+
+.r-container{
+overflow: hidden;
+}
+
+.scrolled {
+  background-color: #cfbaba;
+}
+
+
 .header-home.white-background {
   background-color: #1eb2a6; /* Change background color when white-background class is applied */
 }

@@ -24,14 +24,14 @@ export const homeAbout = [
 export const awrapper = [
   {
     cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
-    data: "There are somany opportunities out there",
-    title: "awarding scholarships all over the world",
+    data: "50+",
+    title: "Beneficiaries",
   },
 
   {
     cover: "https://img.icons8.com/ios/80/ffffff/athlete.png",
-    data: "A total of 8.8 billion people are awarded scholarships all over the world, and 1.7 million",
-    title: "of these scholarships are private scholarships",
+    data: "10+",
+    title: "Scholarships",
   },
   // {
   //   cover: "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
@@ -463,6 +463,23 @@ export const opp = [
     link:'https://www.knust.edu.gh/',
     image:"./images/opp/software.jpg"
   },
+  {id: 4,
+  name:'Ashesi University',
+  dueDate:"by 20th August 2024",
+  details:'We accept applications from students who have completed high school and have successfully passed their WASSCE exams. We also accept applications from students who have completed high school and have successfully passed their IGCSE exams. We accept applications from students who have completed high school and have successfully passed their WASSCE exams. We also accept applications from students who have completed high school and have successfully passed their IGCSE exams.',
+  link:'https://www.ashesi.edu.gh/about.html',
+  image:"./images/opp/ashesi.jpeg"
+  
+},
+{
+  id: 5,
+  name:'University of Ghana',
+  dueDate:"by 20th August 2024",
+  details:'We accept applications from students who have completed high school and have successfully passed their WASSCE exams. We also accept applications from students who have completed high school and have successfully passed their IGCSE exams. We accept applications from students who have completed high school and have successfully passed their WASSCE exams. We also accept applications from students who have completed high school and have successfully passed their IGCSE exams.',
+  link:'https://www.ug.edu.gh/',
+  image:"./images/opp/uni.jpeg"
+},
+  
 
 
 ]
