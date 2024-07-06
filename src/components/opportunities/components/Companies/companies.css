@@ -12,3 +12,116 @@
     transform: scale(1.1);
     transition: 0.5s;
 }
+
+.title_Post {
+    text-align: center;
+    /* Optionally set other properties to troubleshoot alignment */
+    /* Ensure the element is block-level */
+    display: block;
+    /* Set width to 100% to ensure it takes up full width if needed */
+    width: 100%;
+    /* Additional styles for troubleshooting */
+    padding: 10px; /* Add padding for better visibility */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Modal Styles */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.close:hover {
+    color: #555;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.modal-form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.modal-form input,
+.modal-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-form button {
+    padding: 12px 20px;
+    background-color: #1eb2a6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-form button:hover {
+    background-color: #1eb2a6;
+}
+
+/* CSS for Custom File Input */
+.file-input-label {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-input-label:hover {
+    background-color: #1eb2a6;
+}
+
+.file-input {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+}

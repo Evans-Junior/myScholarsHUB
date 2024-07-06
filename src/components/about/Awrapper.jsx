@@ -13,8 +13,8 @@ const Awrapper = () => {
                   <img src={val.cover} alt='' />
                 </div>
                 <div className='text_one'>
-                  <h3>{val.data}</h3>
-                  <h3>{val.title}</h3>
+                  <h2>{val.data}</h2>
+                  <h2>{val.title}</h2>
                 </div>
               </div>
             )

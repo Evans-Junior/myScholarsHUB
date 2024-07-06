@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './Hero.css'
 import { HiLocationMarker } from "react-icons/hi";
 import CountUp from 'react-countup';
-export default function Hero() {
+export default function Hero({setSearch}) {
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleSearch = () => {
+    setSearch(searchValue.trim()); // Save the trimmed search value
+  };
+
+  const handleInputChange = (event) => {
+    setSearchValue(event.target.value); // Update searchValue state with input value
+  };
+
   return (
     <section className="hero-wrapper">
       <div className='padding innerWith flexCenter hero-container'>
@@ -20,8 +30,12 @@ export default function Hero() {
           </div>
           <div className='flexCenter search-bar'>
             <HiLocationMarker color="#1eb2a6" size={25}/>
-            <input type='text'/>
-            <button style={{ margin: '0px 10px 0 0', backgroundColor: '#1eb2a6',color: '#fff' }} >Search</button>
+            <input type='text'
+            placeholder='Find an opportunity'
+            value={searchValue}
+              onChange={handleInputChange} // Capture input change
+            />
+            <button onClick={handleSearch} style={{ margin: '0px 10px 0 0', backgroundColor: '#1eb2a6',color: '#fff' }} >Search</button>
           </div>
 
           <div className='flexCenter stats'>
