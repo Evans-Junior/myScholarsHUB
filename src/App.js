@@ -10,7 +10,7 @@ import Contact from "./components/contact/Contact"
 import Footer from "./components/common/footer/Footer"
 import Home from "./components/home/Home"
 import Apply from "./components/apply/Apply"
-import Opp from "./components/opportunities/Opportunities"
+import Opp from "./components/opportunities/Opportunities2"
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import FileNotFound from './components/FileNotFound/FileNotFound';
 import { auth } from "./firebase/firebase";
