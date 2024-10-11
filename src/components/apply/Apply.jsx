@@ -65,7 +65,7 @@ function Apply() {
       </section>
       <section className='sub-buttom'>
       <div className="space final">
-    <a href="https://docs.google.com/forms/d/1zk_WYpp5ZCuz0Azz6Zzkn5l2CLk8H7Liq-z7VQFnzqE/edit" className='register-space' target="_blank">Register</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvGhVfEb_nngtI2MaqdEgU5kmNyUMDwZvQqGiMRg56EPhGSg/viewform" className='register-space' target="_blank">Register</a>
     </div>
       </section>
     </div>
