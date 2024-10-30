@@ -16,9 +16,9 @@ function Hero (){
       <div className='container'>
         <div className='row'>
           <motion.div>
-          <Heading subtitle="Welcome To myScholarsHUB" title='Best Online Education Expertise' style_name="row_header"/>
+          <Heading subtitle="Welcome To myScholarsHUB" title='Join the Community hub for dream oppotunities' style_name="row_header"/>
           </motion.div>
-          <p className="row_header2">Grab an opportunity to start your education at your dream school whiles on Scholarship.</p>
+          <p className="row_header2">Connect, Collaborate, and Create Your Future. Start your education at your ideal school whiles on Scholarship.</p>
           <div className='button'>
             <motion.button className='primary-btn'
               initial={{scale: 0}}
