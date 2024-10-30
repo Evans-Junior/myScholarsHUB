@@ -350,4 +350,9 @@ flex-direction: column;
   .orangeText {
     font-size: 1.2rem;
   }
+/* 
+  .adjusted{
+    display: flex;
+    width: max-content;
+  } */
 }

@@ -12,7 +12,7 @@ const AboutCard = () => {
           <div className='left row'>
             <img src='./images/students/st3.jpeg' alt='' />
           </div>
-          <div className='right row'>
+          <div className='right row front_boxes'>
             <Heading1 subtitle='TAKE ADVANTAGE' title='Countless openings at these universities and institutions' />
             <div className='items'>
               {homeAbout.map((val,i) => {

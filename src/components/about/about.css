@@ -572,6 +572,12 @@ p {
   text-decoration: none;
 }
 
+.front_boxes{
+  display: flex;
+  
+  margin: 10px 0 0 0;
+}
+
 
 /*----------awrapper------------*/
 @media screen and (max-width: 768px) {
@@ -629,8 +635,13 @@ p {
 
 @media screen and (min-width: 150px) and (max-width: 767px)  {
 .about_page h1{
-
   font-size: 30px;
+}
+
+.front_boxes{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 70px 0;
 }
 
 /* .aboutHome #heading {

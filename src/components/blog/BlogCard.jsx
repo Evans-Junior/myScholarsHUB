@@ -113,7 +113,7 @@ const BlogCard = () => {
             <img src={val.image || val.cover} alt='' style={{ width: '100%', height: 'auto' }} />
           </div>
           <div className='text'>
-            <div className='admin flexSB'>
+            <div className='admin flexSB adjusted'>
               <span>
                 <i className='fa fa-user'></i>
                 <label htmlFor=''>{val.location}</label>

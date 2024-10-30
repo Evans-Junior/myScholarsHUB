@@ -19,6 +19,14 @@
   padding: var(--padding-large);
 }
 
+@media screen and (max-width: 768px) {
+  .blog .text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
 .clickable{
   cursor: pointer;
 }
@@ -178,4 +186,9 @@
 
 .modal-content button:hover {
   background-color: #17a497;
+}
+
+
+@media screen and (max-width: 768px) {
+
 }
