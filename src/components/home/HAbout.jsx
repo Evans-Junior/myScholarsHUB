@@ -87,7 +87,7 @@ function seeMoreDo(event){
                                 {/* <img src={details.dcover} alt='' /> */}
                               </div>
                               <div className='para'>
-                                <p class="cut-off space_new" style={{fontSize:"1 .0rem"}}>Since our establishment in 2022, we have assisted four students in obtaining scholarships to Ghanaian universities. Additionally, our social media platforms have reached over 1000 students, where we share various educational opportunities such as scholarships, internships, grants, conferences, and hackathons. We remain committed to expanding our reach to support more students who require our help in realizing their aspirations of creating positive changes in their communities in Africa.</p>
+                                <p class="cut-off space_new" style={{fontSize:"1 .0rem"}}>Since our establishment in 2022, we have assisted over 10 students in obtaining scholarships to Ghanaian universities. Additionally, our social media platforms have reached over 1000 students, where we share various educational opportunities such as scholarships, internships, grants, conferences, and hackathons. We remain committed to expanding our reach to support more students who require our help in realizing their aspirations of creating positive changes in their communities in Africa.</p>
                                 <input className='outline-btn' type="checkbox"/>
 
                               </div>
